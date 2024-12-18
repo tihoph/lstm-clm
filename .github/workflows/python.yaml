@@ -21,7 +21,7 @@ jobs:
           pip install ruff --upgrade
           pip install mypy --upgrade
           pip install -e ".[dev]"
-      - uses: pre-commit/action@v3
+      - uses: pre-commit/action@v3.0.1
       - name: Lint with ruff
         run: |
           ruff format .
